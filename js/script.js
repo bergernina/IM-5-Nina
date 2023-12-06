@@ -129,3 +129,11 @@ elements.forEach(el => {
       cursor_circle.classList.remove("biggerCursor");
     });
 });
+
+
+// nachoben
+// nachoben
+// nachoben
+document.getElementById('scroll-to-top').addEventListener('click', function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});

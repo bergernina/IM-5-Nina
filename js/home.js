@@ -156,3 +156,11 @@ faders.forEach(fader => {
 sliders.forEach(slider => {
   appearOnScroll.observe(slider);
 })
+
+
+// nachoben
+// nachoben
+// nachoben
+document.getElementById('scroll-to-top').addEventListener('click', function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
