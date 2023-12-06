@@ -1,0 +1,409 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100vh;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    cursor: none;
+}
+  
+h1 {
+    font-size: 4em;
+    text-align: center;
+    margin: 4rem 0 6rem 0;
+    font-family: "gyst-variable", sans-serif;
+    font-variation-settings: "wght" 200;
+    color: #FFFBDA;
+      
+    position: relative;
+    z-index: 2;
+}
+  
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: "gyst-variable", sans-serif;
+    font-variation-settings: "wght" 200;
+    color: #FFFBDA;
+
+    position: relative;
+    z-index: 2;
+      
+}
+  
+p {
+    font-size: 18px;
+    font-family: Proxima Nova, sans-serif;
+    font-weight: 400;
+    color: #1c1c1c;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+  
+/* Navigationsmenu */
+/* Navigationsmenu */
+header {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+    z-index: 2;
+}
+  
+nav {
+    width: 100%; 
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+    
+nav li {
+    flex-grow: 1; /* Distribute the available space equally among all list items */
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    text-align: center; 
+    font-family: "alfarn", sans-serif;
+    color: #FFFBDA;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit; /* Übernimmt die Farbe vom übergeordneten Element (nav li) */
+    display: block; /* Füllt das gesamte Listenelement mit dem Link */
+    height: 100%; 
+    cursor: none;
+}
+  
+nav li::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #FFFBDA;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+  
+nav li:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+
+
+/* Kontaktformular */
+/* Kontaktformular */
+.formular {
+    width: 700px;
+    margin: auto;
+    padding: 20px; /* Innenabstand für das Formular */
+    position: relative;
+    z-index: 2;
+}
+  
+form {
+    display: flex;
+    flex-direction: column;
+}
+  
+label {
+    margin-bottom: 8px; /* Abstand zwischen Label und Input-Feld */
+    margin-left: 12px;
+    font-family: "alfarn", sans-serif;
+    font-size: 16px;
+    color:  #FFFBDA;
+}
+  
+input,
+textarea {
+    padding: 8px;
+    margin-bottom: 15px; /* Abstand zwischen den Eingabefeldern */
+    background-color: #FFFBDA;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+    border-radius: 1rem;
+    border: none;
+}
+  
+button {
+    width: 30%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    color: #FFFBDA;
+    border: none;
+    border-radius: 1rem;
+    font-family: alfarn;
+    background-image:linear-gradient(131deg, #ffd340, #ff923c, #ff923c, #ff923c);
+    background-size: 300% 100%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+  
+button:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em #ff923cba;
+    background-size: 100% 100%;
+    transform: translateY(-0.25em);
+}
+  
+.notification {
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-family: Proxima Nova, sans-serif;
+    font-weight: 400;
+    color: #FFFBDA;
+    z-index: 2;
+}
+
+
+
+/* footer */
+/* footer */
+ul {
+    list-style: none;
+  }
+  
+  .bottom-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+  }
+  
+  .bottom-section p {
+    font-size: 14px;
+    color: #1c1c1c;
+    font-family: Proxima Nova, sans-serif;
+    font-weight: 400;
+    opacity: 0.75;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .bottom-section p i {
+    color: #1c1c1c;
+    font-size: 1rem;
+    margin-right: 1rem;
+    z-index: 2;
+  }
+  
+  .social-media {
+    display: flex;
+    z-index: 2;
+  }
+  
+  .social-media a {
+    margin-left: 0.8rem;
+    font-size: 1rem;
+    color: #1c1c1c;
+    opacity: 0.75;
+    transition: 0.3s;
+  }
+  
+  .social-media a:hover {
+    color: #FFFBDA;
+  }
+  
+  
+  
+  
+
+
+
+/* hoverVergrösserung seite-d */
+/* hoverVergrösserung seite-d */
+.hover {
+    width: 100%;
+    margin-top: 100px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+  
+.textHover {
+    transition: font-size 0.5s;
+    font-family: sans-serif;
+    
+}
+  
+.hover:hover .textHover {
+    font-size: 24px;
+}
+
+
+
+/* animated background */
+/* animated background */
+.animated-background::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #E8913F, #548973, #537B9E, #772850);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    z-index: -1;
+  }
+  
+  .animated-background {
+    position: relative;
+    z-index: 1;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+
+
+/* vertical lines*/
+/* vertical lines*/
+.line-left {
+    position: fixed;
+    border-left: 0.5px solid black;
+    height: 100%;
+    left: 25%;
+    z-index: 2;
+}
+.line-middle {
+    position: fixed;
+    border-left: 0.5px solid black;
+    height: 100%;
+    left: 50%;
+    z-index: 2;
+}
+.line-right {
+    position: fixed;
+    border-left: 0.5px solid black;
+    height: 100%;
+    left: 75%;
+    z-index: 2;
+} 
+
+/* cursor */
+/* cursor */
+.cursor-circle {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    transform: translate(calc(-50%), calc(-50%));
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 0.1px solid rgba(186, 196, 191, 0.5);
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    transition-duration: 0.2s, 0.3s, 0.3s, 0.3s, 0.06s;
+    transition-property: opacity, width, height, background-color, transform;
+}
+  
+.cursor-point {
+    position: fixed;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    top: 0px;
+    left: 0px;
+    transform: translate(calc(-50%), calc(-50%));
+    background-color: #bac4bf;
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s opacity;
+}
+  
+.cursor-circle.biggerCursor {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(105, 105, 105, 0.4);
+}
+
+
+
+
+/* Smartphone-Anpassungen */
+@media only screen and (max-width: 800px) {
+    body, html {
+      height: auto;
+      overflow-x: hidden;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav li {
+      width: 100%;
+      text-align: center;
+      padding: 5px 0;
+    }
+  
+    nav li::before {
+      display: none; /* Kein Unterstrich bei kleinen Bildschirmen */
+    }
+  
+    .formular {
+      max-width: 90%;
+    }
+  
+    h1 {
+      font-size: 2.5em;
+      margin: 1.5rem 0;
+    }
+  
+    h2 {
+      font-size: 2em;
+      margin: 1rem 0 1.5rem 0;
+    }
+  
+    p {
+      font-size: 1em;
+      margin: 0 1rem;
+    }
+  
+    .line-left, .line-middle, .line-right {
+      display: none; /* Verstecke vertikale Linien auf Smartphones */
+    }
+  
+    .cursor-circle, .cursor-point {
+      display: none; /* Verstecke Cursor auf Smartphones */
+    }
+  }  

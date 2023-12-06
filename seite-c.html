@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/eab3zlg.css"> <!--font-->
+    <title>seite-c</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="music.css">
+</head>
+
+<body>
+    <div class="line-left"></div>
+    <div class="line-middle"></div>
+    <div class="line-right"></div>
+
+    <div class="animated-background"></div>
+
+    <div class="cursor cursor-circle"></div>
+    <div class="cursor cursor-point"></div>
+
+
+ <header>
+      <nav>
+        <ul>
+          <li class="getHover"><a href="index.html">( home )</a></li>
+          <li class="getHover"><a href="seite-b.html">( blog )</a></li>
+          <li class="getHover"><a href="seite-c.html">( music )</a></li>
+          <li class="getHover"><a href="seite-d.html">( contact )</a></li>
+        </ul>
+      </nav>   
+     </header>
+
+
+    <h1>music player</h1>
+
+
+<audio src="" id="audio"></audio>
+<div class="space">
+
+    <div class="music-player">
+      <h2 class="music-name">song one</h1>
+      <p class="artist-name">artist</p>
+
+      <div class="disk"></div>
+
+      <div class="song-slider">
+        <input type="range" value="0" class="seek-bar getHover">
+        <span class="current-time">00:00</span>
+        <span class="song-duration">00:00</span>
+      </div>
+
+    <div class="controls">
+      <button class="btn backward-btn getHover"><img src="Grafiken/backward.png" alt=""></button>
+      <button class="play-btn pause getHover">
+          <span></span>
+          <span></span>
+      </button>
+      <button class="btn forward-btn getHover"><img src="Grafiken/forward.png" alt=""></button>
+    </div>
+    </div>
+    
+
+
+
+    <!-- Image slider -->
+    <!-- Image slider -->
+    <section class="container">
+      <div class="slider-wrapper getHover">
+        <div class="slider">
+          <img id="slide-1" src="Bildgalerie/---_01451.jpg">
+          <img id="slide-2" src="Bildgalerie/_24_01500.jpg">
+          <img id="slide-3" src="Bildgalerie/_25_01501.jpg">
+        </div>
+        <div class="slider-nav">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+        </div>
+      </div>
+    </section>   
+</div>  
+
+
+<!-- footer -->
+<!-- footer -->
+<div class="bottom-section hide">
+  <p>
+    <i class='bx bxs-map'></i> Located in Switzerland
+  </p>
+  <ul class="social-media">
+    <li>
+      <a href="https://www.instagram.com/ninasophia3/" target="_blank" class="getHover">
+        <i class='bx bxl-instagram' ></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/nina-sophia-berger/" target="_blank" class="getHover">
+        <i class='bx bxl-linkedin' ></i>
+      </a>
+    </li>
+  </ul>
+</div> 
+      
+ 
+
+    <script src="js/data.js"></script>
+    <script src="js/music.js"></script>
+</body>
+</html>
+
+
+
