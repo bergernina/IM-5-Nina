@@ -313,8 +313,8 @@ section#image-gallery {
 }
 
 
-/* nachoben */
-/* nachoben */
+/* nachoben index */
+/* nachoben index */
 #scroll-to-top {
   position: fixed;
   bottom: 50px;
@@ -339,46 +339,6 @@ section#image-gallery {
 }
 
 
-
-/* cursor */
-/* cursor */
-.cursor-circle {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    transform: translate(calc(-50%), calc(-50%));
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: transparent;
-    border: 0.1px solid rgba(186, 196, 191, 0.5);
-    z-index: 10;
-    opacity: 0;
-    pointer-events: none;
-    transition-duration: 0.2s, 0.3s, 0.3s, 0.3s, 0.06s;
-    transition-property: opacity, width, height, background-color, transform;
-}
-
-.cursor-point {
-    position: fixed;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    top: 0px;
-    left: 0px;
-    transform: translate(calc(-50%), calc(-50%));
-    background-color: #bac4bf;
-    z-index: 10;
-    opacity: 0;
-    pointer-events: none;
-    transition: 0.2s opacity;
-}
-
-.cursor-circle.biggerCursor {
-    width: 70px;
-    height: 70px;
-    background-color: rgba(105, 105, 105, 0.4);
-}
 
 
 
@@ -437,6 +397,47 @@ section#image-gallery {
     height: 100%;
     left: 75%;
     z-index: 2;
+}
+
+
+/* cursor index */
+/* cursor index */
+.cursor-circle {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    transform: translate(calc(-50%), calc(-50%));
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 0.1px solid rgba(186, 196, 191, 0.5);
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    transition-duration: 0.2s, 0.3s, 0.3s, 0.3s, 0.06s;
+    transition-property: opacity, width, height, background-color, transform;
+}
+
+.cursor-point {
+    position: fixed;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    top: 0px;
+    left: 0px;
+    transform: translate(calc(-50%), calc(-50%));
+    background-color: #bac4bf;
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s opacity;
+}
+
+.cursor-circle.biggerCursor {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(105, 105, 105, 0.4);
 }
 
 

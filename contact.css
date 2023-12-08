@@ -10,41 +10,6 @@ body, html {
     height: 100vh;
     overflow-x: hidden; /* Hide horizontal scrollbar */
 }
-  
-h1 {
-    font-size: 4em;
-    text-align: center;
-    margin: 4rem 0 6rem 0;
-    font-family: "gyst-variable", sans-serif;
-    font-variation-settings: "wght" 200;
-    color: #FFFBDA;
-      
-    position: relative;
-    z-index: 2;
-}
-  
-h2 {
-    font-size: 3rem;
-    font-weight: bold;
-    text-align: center;
-    font-family: "gyst-variable", sans-serif;
-    font-variation-settings: "wght" 200;
-    color: #FFFBDA;
-
-    position: relative;
-    z-index: 2;
-      
-}
-  
-p {
-    font-size: 18px;
-    font-family: Proxima Nova, sans-serif;
-    font-weight: 400;
-    color: #1c1c1c;
-
-    position: relative;
-    z-index: 2;
-}
 
 
   
@@ -106,6 +71,45 @@ nav li:hover::before {
     width: 100%;
     left: 0;
 }
+
+
+/* fonts */
+/* fonts */
+h1 {
+  font-size: 4em;
+  text-align: center;
+  margin: 4rem 0 6rem 0;
+  font-family: "gyst-variable", sans-serif;
+  font-variation-settings: "wght" 200;
+  color: #FFFBDA;
+    
+  position: relative;
+  z-index: 2;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: "gyst-variable", sans-serif;
+  font-variation-settings: "wght" 200;
+  color: #FFFBDA;
+
+  position: relative;
+  z-index: 2;
+    
+}
+
+p {
+  font-size: 18px;
+  font-family: Proxima Nova, sans-serif;
+  font-weight: 400;
+  color: #1c1c1c;
+
+  position: relative;
+  z-index: 2;
+}
+
 
 
 
@@ -229,32 +233,7 @@ ul {
   .social-media a:hover {
     color: #FFFBDA;
   }
-  
-  
-  
-  
-
-
-
-/* hoverVergrösserung seite-d */
-/* hoverVergrösserung seite-d */
-.hover {
-    width: 100%;
-    margin-top: 100px;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-}
-  
-.textHover {
-    transition: font-size 0.5s;
-    font-family: sans-serif;
-    
-}
-  
-.hover:hover .textHover {
-    font-size: 24px;
-}
+ 
 
 
 

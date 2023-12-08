@@ -1,26 +1,5 @@
 
 
-// slider text seite-a ???
-// slider text seite-a ???
-// slider text seite-a ???
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    console.log(entry);
-    if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
-      entry.target.classList.add('show');
-    } else {
-      entry.target.classList.remove('show');
-    }
-  });
-});
-
-const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((el) => observer.observe(el));
-
-
-
-
-
 // faders/grid seite-b
 // faders/grid seite-b
 // faders/grid seite-b
@@ -63,9 +42,9 @@ sliders.forEach(slider => {
 
 
 
-// Kontaktformular
-// Kontaktformular
-// Kontaktformular
+// Kontaktformular seite-d
+// Kontaktformular seite-d
+// Kontaktformular seite-d
 function submitForm() {
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
@@ -131,9 +110,9 @@ elements.forEach(el => {
 });
 
 
-// nachoben
-// nachoben
-// nachoben
+// nachoben seite-b
+// nachoben seite-b
+// nachoben seite-b
 document.getElementById('scroll-to-top').addEventListener('click', function() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
