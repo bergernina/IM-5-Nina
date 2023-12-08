@@ -84,7 +84,7 @@ function submitForm() {
 
   setTimeout(() => {
     window.location.reload();
-  }, 9000);
+  }, 4000);
 }
 
 function zeigeBenachrichtigung(text) {

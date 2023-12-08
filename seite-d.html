@@ -23,10 +23,10 @@
     <header>
       <nav>
         <ul>
-          <li><a href="index.html">( home )</a></li>
-          <li><a href="seite-b.html">( blog )</a></li>
-          <li><a href="seite-c.html">( muisc )</a></li>
-          <li><a href="seite-d.html">( contact )</a></li>
+          <li class="nav-link getHover"><a href="index.html">( home )</a></li>
+          <li class="nav-link getHover"><a href="seite-b.html">( blog )</a></li>
+          <li class="nav-link getHover"><a href="seite-c.html">( muisc )</a></li>
+          <li class="nav-link getHover"><a href="seite-d.html">( contact )</a></li>
         </ul>
       </nav>   
     </header>
@@ -40,15 +40,15 @@
 <div class="formular">
   <form id="contactForm">
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
+    <input type="text" id="name" class="getHover" name="name" required>
 
     <label for="email">E-Mail:</label>
-    <input type="email" id="email" name="email" required>
+    <input type="email" id="email" class="getHover" name="email" required>
 
     <label for="message">Nachricht:</label>
-    <textarea id="message" name="message" rows="4" required></textarea>
+    <textarea id="message" class="getHover" name="message" rows="4" required></textarea>
 
-    <button type="button" onclick="submitForm()">Absenden</button>
+    <button type="button" class="getHover" onclick="submitForm()">Absenden</button>
   </form>
 </div>
 
